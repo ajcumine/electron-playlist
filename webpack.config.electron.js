@@ -16,7 +16,7 @@ export default validate(merge(baseConfig, {
   // 'main.js' in root
   output: {
     path: __dirname,
-    filename: './app/main.js'
+    filename: './app/main.js',
   },
 
   plugins: [
@@ -29,9 +29,9 @@ export default validate(merge(baseConfig, {
     // ),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production')
-      }
-    })
+        NODE_ENV: JSON.stringify('production'),
+      },
+    }),
   ],
 
   /**
@@ -47,6 +47,6 @@ export default validate(merge(baseConfig, {
    */
   node: {
     __dirname: false,
-    __filename: false
+    __filename: false,
   },
 }));
