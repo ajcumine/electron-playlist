@@ -10,5 +10,6 @@
   },
   "license": "",
   "dependencies": {
+    "googleapis": "^16.1.0"
   }
 }
