@@ -2,11 +2,12 @@
 import React from 'react';
 
 type Props = {
-  label: string
+  label: string,
+  handleClick: () => void
 };
 
 const Button = (props: Props) => (
-  <button>
+  <button onClick={props.handleClick}>
     {props.label}
   </button>
 );
