@@ -18,3 +18,6 @@ Picking Electron as the application framework forces the project into the Node.j
 
 ## ESLint
 [ESLint](http://eslint.org/) creates a common style across the project. Linting with ESLint ensures higher code readability and productivity as common coding styles and practices emerge across the development environment.
+
+## .env
+[.env](https://github.com/motdotla/dotenv) allows you to keep your secrets... secret by storing letting you use a hidden `.env` file in the root of your application directory and loading them into the application `process.env` at runtime. This stops you from doing silly things like publishing API keys.
