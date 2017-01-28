@@ -11,7 +11,8 @@ With the dependencies installed run the following commands in the project root d
 $ yarn install
 ```
 This installs the required node dependencies.
-> If there is an error during the installation of an `eslint` package, see [Linting](#Linting)
+
+In order to run the application you will need a `.env` file located at the root directory of the application. An example of the variable in this file and the format required is given [`.env.example`](https://github.com/ajcumine/electron-playlist/blob/master/.env.example) also located in the root of the application.
 
 ```
 $ yarn run dev

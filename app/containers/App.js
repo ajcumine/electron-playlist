@@ -1,16 +1,15 @@
-// @flow
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class App extends Component {
-  props: {
-    children: HTMLElement
-  };
+// type Props = {
+//   children: HTMLElement
+// };
 
-  render() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    );
-  }
-}
+/* eslint-disable react/prop-types */
+const App = (props, context) => ( // eslint-disable-line no-unused-vars
+  <div>
+    {props.children}
+  </div>
+);
+/* eslint-enable react/prop-types */
+
+export default App;

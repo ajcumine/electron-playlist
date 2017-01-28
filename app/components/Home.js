@@ -1,14 +1,11 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './Home.css';
 
+const Home = () => (
+  <div className={styles.container}>
+    Electron Playlist
+  </div>
+);
 
-export default class Home extends Component {
-  render() {
-    return (
-      <div>
-        <div className={styles.container} />
-      </div>
-    );
-  }
-}
+export default Home;
