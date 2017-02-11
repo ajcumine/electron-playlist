@@ -9,7 +9,11 @@ type actionType = {
   type: string
 };
 
-export default function userReducer(state: userStateType = { userToken: 'unknown' }, action: actionType) {
+const getInitialState = () => ({
+  userToken: 'unknown',
+});
+
+const userReducer = (state: userStateType = getInitialState(), action: actionType) => {
   switch (action.type) {
     case LOGIN: {
       const newState = {
@@ -30,4 +34,6 @@ export default function userReducer(state: userStateType = { userToken: 'unknown
       return newState;
     }
   }
-}
+};
+
+export default userReducer;
